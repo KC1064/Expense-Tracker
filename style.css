@@ -1,0 +1,57 @@
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2px; */
+}
+
+.container {
+    height: 400px;
+    width: 800px;
+    background-color: rgba(91, 86, 86, 0.141);   
+    padding: 10px;
+    border-radius: 12px;
+    border: 4px solid pink;
+}
+
+h3 {
+    margin-left: 10px;
+    font-size: 29px;
+}
+#expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 6px;
+}
+
+input[type="text"],input[type="submit"],input[type="number"],#category {
+    height: 35px;
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #09ee11;
+    border: solid black 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: aqua;
+    transition-duration: 200ms;
+}
+
+table {
+    margin-top: 12px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 2px solid black;
+}
