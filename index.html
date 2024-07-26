@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- <h1>EXPENSE TRACKER</h1> -->
     <div class="container">
-        <h3>Expense Tracker</h3>
+        <h3>Entry of Expenses</h3>
         <form id="expense-form">
-            <input type="text" placeholder="Describe the Expense"/>
-            <select name="Select Category" id="category">
+            <input type="text" placeholder="Describe the Expense" id="description" required />
+            <select name="Select Category" id="category" required>
                 <option value="Select Category">Select Category</option>
                 <option value="Travel">Travel</option>
                 <option value="Entertainment">Entertainment</option>
@@ -19,24 +23,34 @@
                 <option value="Health">Health</option>
                 <option value="Miscellaneous">Miscellaneous</option>
             </select>
-            <input type="number" placeholder="Enter Amount">
+            <input type="number" placeholder="Enter Amount" id="amount" required>
             <input type="submit" value="ADD EXPENSE">
         </form>
 
-        <div>
-            <table>
-                <thead>
+        <h3>Expense Summary</h3>
+        <table>
+            <thead>
+                <tr>
                     <th>Description</th>
                     <th>Category</th>
                     <th>Amount</th>
-                </thead>
-                <tbody>
+                </tr>
+            </thead>
+            <tbody id="exp-list">
+                <!-- <tr>
                     <td>Car</td>
                     <td>Transportation</td>
                     <td>10000</td>
-                </tbody>
-            </table>
-        </div>
+                </tr>
+                <tr>
+                    <td>Car</td>
+                    <td>Transportation</td>
+                    <td>10000</td>
+                </tr> -->
+            </tbody>
+        </table>
+
     </div>
+
+    <script src="script.js"></script>
 </body>
-</html>

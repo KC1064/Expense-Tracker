@@ -15,8 +15,14 @@ form.addEventListener("submit", function (event) {
             <td>${amt}</td>`;
 
     list.appendChild(newRow);
-    document.getElementById("description").value = "";
-    document.getElementById("category").value = "Select Category";
-    document.getElementById("amount").value = "";
+    clearAll();
+  } else {
+    alert("Please Enter valid details");
   }
 });
+
+function clearAll() {
+  document.getElementById("description").value = "";
+  document.getElementById("category").value = "Select Category";
+  document.getElementById("amount").value = "";
+}
