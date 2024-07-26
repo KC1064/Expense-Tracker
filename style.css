@@ -59,6 +59,7 @@ th,td {
     border: 2px solid black;
     height: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 4px;
 }
 
 thead {
